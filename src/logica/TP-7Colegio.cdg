@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="TP-7Colegio">
+  <ClassDiagramComponents>
+    <Class name="Alumno" package="" visibility="public" xPosition="104.0" yPosition="45.0">
+      <Fields>
+        <Field name="legajo" type="int" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="materias" type="HashSet&lt;Materia&gt;" visibility="private"/>
+        <Field name="al" type="ArrayList&lt;Alumno&gt;" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="legajo"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="String" name="nombre"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getLegajo" returnType="int" visibility="public"/>
+        <Method name="setLegajo" returnType="void" visibility="public">
+          <Argument type="int" name="legajo"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="agregarMateria" returnType="void" visibility="public"/>
+        <Method name="cantidadMaterias" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Materia" package="" visibility="public" xPosition="567.0" yPosition="45.0">
+      <Fields>
+        <Field name="idMateria" type="int" visibility="private"/>
+        <Field name="nombreMateria" type="String" visibility="private"/>
+        <Field name="anio" type="int" visibility="private"/>
+        <Field name="mat" type="ArrayLista&lt;Materia&gt;" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="idMateria"/>
+          <Argument type="String" name="nombreMateria"/>
+          <Argument type="int" name="anio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIdMateria" returnType="int" visibility="public"/>
+        <Method name="setIdMateria" returnType="void" visibility="public">
+          <Argument type="int" name="idMateria"/>
+        </Method>
+        <Method name="getNombreMateria" returnType="String" visibility="public"/>
+        <Method name="setNombreMateria" returnType="void" visibility="public">
+          <Argument type="String" name="nombreMateria"/>
+        </Method>
+        <Method name="getAnio" returnType="int" visibility="public"/>
+        <Method name="setAnio" returnType="void" visibility="public">
+          <Argument type="int" name="anio"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="tiene" source="Alumno" target="Materia" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
