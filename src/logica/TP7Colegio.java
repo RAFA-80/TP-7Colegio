@@ -30,8 +30,8 @@ public class TP7Colegio {
         // Volver a asignar Laboratorio1 al alumno a1
         a1.agregarMateria(m2);
 
-        System.out.println("El alumno " + a + " esta indcripto en " + a.cantidadMaterias(a) + " materias ");
-        System.out.println("El alumno " + a1 + " esta indcripto en " + a1.cantidadMaterias(a1) + " materias ");
+        System.out.println("El alumno " + a + " esta inscripto en " + a.cantidadMaterias(a) + " materias ");
+        System.out.println("El alumno " + a1 + " esta inscripto en " + a1.cantidadMaterias(a1) + " materias ");
 
 //      EJECUTAR FORMULARIO Menu desde "Run File" para probar IGU.
 
