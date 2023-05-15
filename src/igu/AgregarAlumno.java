@@ -12,8 +12,6 @@ import logica.Alumno;
  */
 public class AgregarAlumno extends javax.swing.JInternalFrame {
 
-    // public static ArrayList<Alumno> alumnos = new ArrayList();
-    //public static Alumno alum = new Alumno();
     /**
      * Creates new form NuevoCliente
      */

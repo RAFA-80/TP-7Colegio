@@ -12,8 +12,6 @@ import logica.Materia;
  */
 public class AgregarMateria extends javax.swing.JInternalFrame {
 
-    // public static ArrayList<Materia> materias = new ArrayList();
-    //public static Materia mat = new Materia();
     /**
      * Creates new form NuevoCliente
      */
